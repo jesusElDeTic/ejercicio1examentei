@@ -31,7 +31,7 @@ input.onButtonPressed(Button.B, function () {
         . . . . .
         . . . . .
         `))
-    if (numero < 8 && numero >= 0) {
+    if (numero <= 8 && numero > 0) {
         makerbit.showStringOnLcd1602("", numero, 1)
         makerbit.lcdShowCharacter1602(LcdChar.c2, numero + 16)
         numero += -1
